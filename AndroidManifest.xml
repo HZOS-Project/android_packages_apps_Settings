@@ -4841,6 +4841,20 @@
                   android:exported="false"
                   android:theme="@style/SudThemeGlif.Light">
         </activity>
+		
+		<!-- HZSettings -->
+        <activity android:name=".Settings$HZSettingsActivity"
+            android:label="@string/hz_settings_title"
+            android:icon="@drawable/ic_homepage_hz"
+            android:parentActivityName="com.android.settings"
+            android:exported="true">
+            <intent-filter android:priority="69">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.hz.settings.HZSettings" />
+        </activity>
 
         <activity
             android:name="Settings$OneHandedSettingsActivity"

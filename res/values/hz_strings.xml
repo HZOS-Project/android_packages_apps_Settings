@@ -13,4 +13,9 @@
 
     <!-- Maintainer -->
     <string name="maintainer">Maintainer</string>
+
+    <!--HZ Settings-->
+    <string name="hz_settings_title">HZ Settings</string>
+    <string name="hz_settings_summary">Be on the same wavelength</string>
+
 </resources>
