@@ -21,6 +21,26 @@
     android:key="top_level_settings"
     android:title="Settings">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:layout="@layout/top_level_preference_banner_view"
+        android:key="top_level_homepage_banner_view"
+        android:order="-180"/>
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:layout="@layout/homepage_widgets"
+        android:key="top_level_homepage_widgets"
+        android:selectable="false"
+        android:order="-170" />
+
+    <com.android.settings.widget.HomepagePreference
+        android:key="top_level_hz"
+        android:title="@string/hz_settings_title"
+        android:summary="@string/hz_settings_summary"
+        android:icon="@drawable/ic_hz"
+        android:order="-155"
+        android:fragment="com.hz.settings.HZSettings"
+        settings:highlightableMenuKey="@string/menu_key_hz"/>
+
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
@@ -59,15 +79,6 @@
         android:title="@string/apps_dashboard_title"
         android:summary="@string/app_and_notification_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_apps"/>
-		
-	<com.android.settings.widget.HomepagePreference
-        android:key="top_level_hz"
-        android:title="@string/hz_settings_title"
-        android:summary="@string/hz_settings_summary"
-        android:icon="@drawable/ic_hz"
-        android:order="-125"
-        android:fragment="com.hz.settings.HZSettings"
-		settings:highlightableMenuKey="@string/menu_key_hz"/>
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.notification.ConfigureNotificationSettings"

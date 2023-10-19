@@ -87,4 +87,6 @@
 
     <!-- Label for a numbered SIM card.  [CHAR LIMIT=40] -->
     <string name="sim_card_number_title">SIM <xliff:g id="card_number">%1$d</xliff:g></string>
+
+    <string name="about_hz_device">HZ Device</string>
 </resources>
